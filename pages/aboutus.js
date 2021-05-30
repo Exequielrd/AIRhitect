@@ -28,9 +28,7 @@ const AboutUs = () => {
           property="og:description"
           content="Mauris totor leo, volutpat ut lacus at, maximus eleifend dolor.
           Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridicuvlus mus debitis at voluptatem
-          cumque consequatur suscipit obcaecati dicta. Quaerat amet, incidunt
-          exercitationem earum facere asperiores dicta nobis, maiores est"
+          parturient montes"
         />
         <meta
           property="og:image"
@@ -47,9 +45,7 @@ const AboutUs = () => {
           property="twitter:description"
           content="Mauris totor leo, volutpat ut lacus at, maximus eleifend dolor.
           Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridicuvlus mus debitis at voluptatem
-          cumque consequatur suscipit obcaecati dicta. Quaerat amet, incidunt
-          exercitationem earum facere asperiores dicta nobis, maiores est"
+          parturient montes"
         />
         <meta property="twitter:image" content="/logo.png" />
         <link rel="icon" href="/favicon.ico" />
