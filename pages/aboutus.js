@@ -19,7 +19,10 @@ const AboutUs = () => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta
+          property="og:url"
+          content="https://air-hitect-eight.vercel.app/"
+        />
         <meta property="og:title" content="AIRhitect - Home" />
         <meta
           property="og:description"
@@ -35,7 +38,10 @@ const AboutUs = () => {
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="twitter:url"
+          content="https://air-hitect-eight.vercel.app/"
+        />
         <meta property="twitter:title" content="AIRhitect - Home" />
         <meta
           property="twitter:description"
