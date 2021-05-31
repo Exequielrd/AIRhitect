@@ -1,4 +1,4 @@
-# AIRhitec
+# AIRhitect
 
 This is Landing page created with [next](https://nextjs.org/docs/getting-started), [material-ui](https://material-ui.com/getting-started/installation/), [framer-motion](https://www.framer.com/api/motion/), [styled-components](https://styled-components.com/docs)
 
@@ -26,7 +26,7 @@ or
 yarn add -D babel-plugin-styled-components
 ```
 
-and add set .babelrc
+and set .babelrc
 
 ```bash
 {
