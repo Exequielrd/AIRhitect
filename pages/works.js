@@ -33,6 +33,45 @@ const Works = () => {
         <title>AIRhitect - Trabajos</title>
         <meta name="description" content="Trabajos de AIRhitect" />
         <meta name="keywords" content="airhitect, Orci, Mexico"></meta>
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://air-hitect-eight.vercel.app/works"
+        />
+        <meta property="og:title" content="AIRhitect - Trabajos" />
+        <meta
+          property="og:description"
+          content="Mauris totor leo, volutpat ut lacus at, maximus eleifend dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridicuvlus mus debitis at voluptatem cumque consequatur suscipit obcaecati dicta. Quaerat amet, incidunt exercitationem earum facere asperiores dicta nobis, maiores est"
+        />
+        <meta
+          property="og:image"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/project1.png"
+        />
+
+        <meta name="twitter:card" content="gallery" />
+        <meta name="twitter:creator" content="@exequielrd" />
+        <meta
+          name="twitter:url"
+          content="https://air-hitect-eight.vercel.app/works"
+        />
+        <meta name="twitter:title" content="AIRhitect - Sobre nosotros" />
+        <meta
+          name="twitter:description"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique ipsam a nesciunt blanditiis placeat ducimus! Similique, vero minima! Facilis!"
+        />
+        <meta
+          name="twitter:image0"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects1.png"
+        />
+        <meta
+          name="twitter:image0"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects2.png"
+        />
+        <meta
+          name="twitter:image0"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects3.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

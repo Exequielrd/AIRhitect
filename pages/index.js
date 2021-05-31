@@ -25,7 +25,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.png"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.webp"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -41,7 +41,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.png"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.webp"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
