@@ -6,10 +6,30 @@ export default function Home() {
     <Container>
       <Head>
         <title>AIRhitect - Inicio</title>
-        <meta name="author" content="Exequiel Ruiz" />
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:description" content="AIRhitect Inicio"></meta>
-        <meta name="twitter:image" content="/logo.png"></meta>
+        <title>AIRhitect - Inicio</title>
+        <meta name="title" content="AIRhitect - Inicio" />
+        <meta name="description" content="hola como estas todo bien" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://air-hitect-eight.vercel.app/"
+        />
+        <meta property="og:title" content="AIRhitect - Inicio" />
+        <meta property="og:description" content="hola como estas todo bien" />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://air-hitect-eight.vercel.app/"
+        />
+        <meta property="twitter:title" content="AIRhitect - Inicio" />
+        <meta
+          property="twitter:description"
+          content="hola como estas todo bien"
+        />
+        <meta property="twitter:image" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TitleContainer>
