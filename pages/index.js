@@ -17,10 +17,7 @@ export default function Home() {
         />
         <meta property="og:title" content="AIRhitect - Inicio" />
         <meta property="og:description" content="hola como estas todo bien" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/Exequielrd/AIRhitect/main/public/meta-index.png"
-        />
+        <meta property="og:image" content="/meta-index.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -32,10 +29,7 @@ export default function Home() {
           property="twitter:description"
           content="hola como estas todo bien"
         />
-        <meta
-          property="twitter:image"
-          content="https://raw.githubusercontent.com/Exequielrd/AIRhitect/main/public/meta-index.png"
-        />
+        <meta property="twitter:image" content="/meta-index.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TitleContainer>
