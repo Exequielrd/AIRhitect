@@ -4,6 +4,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos"
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos"
 import IndexDescription from "../components/IndexDescripion"
 import Head from "next/head"
+import CloseIcon from "@material-ui/icons/Close"
 
 const Works = () => {
   // Index for view images
@@ -12,7 +13,6 @@ const Works = () => {
 
   //Pop up state
   const [open, setOpen] = useState(false)
-  console.log(open)
 
   // Controls for change gallery image
   const leftClick = () => {
@@ -32,8 +32,9 @@ const Works = () => {
   }
 
   //Popup handle
-  const handleOpen = () => {
+  const handleOpen = (i) => {
     setOpen(true)
+    setIndexGallery(i)
   }
 
   const handleClose = () => {
@@ -83,7 +84,7 @@ const Works = () => {
 
       <IndexDescription>Trabajos</IndexDescription>
       <Gallery>
-        <Card url={"/projects1.png"} onClick={handleOpen}>
+        <Card url={"/projects1.png"} onClick={() => handleOpen(0)}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -92,7 +93,7 @@ const Works = () => {
             </p>
           </ProjectDescription>
         </Card>
-        <Card url={"/projects2.png"} onClick={handleOpen}>
+        <Card url={"/projects2.png"} onClick={() => handleOpen(1)}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -101,7 +102,7 @@ const Works = () => {
             </p>
           </ProjectDescription>
         </Card>
-        <Card url={"/projects3.png"} onClick={handleOpen}>
+        <Card url={"/projects3.png"} onClick={() => handleOpen(2)}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -113,7 +114,7 @@ const Works = () => {
       </Gallery>
 
       <MobileGallery>
-        <Card url={urls[indexGallery]}>
+        <Card url={urls[indexGallery]} onClick={() => handleOpen(indexGallery)}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -130,24 +131,27 @@ const Works = () => {
         <ArrowBackIosIcon style={{ fontSize: 30, color: "#eee" }} />
       </Arrow>
       {open && (
-        <Modal>
-          <img src="/projects1.png" alt="proyecto" />
-          <figcaption>
-            <h2>Nombre del proyecto</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit nam
-              curabitur sollicitudin egestas dis facilisis, luctus nulla sed non
-              quam tempus congue suscipit euismod turpis nisi libero. Morbi
-              placerat litora mollis odio tincidunt leo magna pulvinar ultrices,
-              mauris imperdiet vel ultricies risus metus eros ac, aptent auctor
-              pharetra facilisis nec euismod ligula sodales. Feugiat ad montes
-              bibendum quis ac nullam neque metus pellentesque pulvinar,
-              tristique cubilia litora viverra magna sodales quam fusce
-              interdum, quisque nec sollicitudin accumsan dapibus enim suscipit
-              sociosqu rutrum.
-            </p>
-          </figcaption>
-        </Modal>
+        <ModalContainer onClick={handleClose}>
+          <Modal>
+            <img src={urls[indexGallery]} alt="proyecto" />
+            <figcaption>
+              <h2>Nombre del proyecto</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit nam
+                curabitur sollicitudin egestas dis facilisis, luctus nulla sed
+                non quam tempus congue suscipit euismod turpis nisi libero.
+                Morbi placerat litora mollis odio tincidunt leo magna pulvinar
+                ultrices, mauris imperdiet vel ultricies risus metus eros ac,
+                aptent auctor pharetra facilisis nec euismod ligula sodales.
+                Feugiat ad montes bibendum quis ac nullam neque metus
+                pellentesque pulvinar, tristique cubilia litora viverra magna
+                sodales quam fusce interdum, quisque nec sollicitudin accumsan
+                dapibus enim suscipit sociosqu rutrum.
+              </p>
+            </figcaption>
+            <Close onClick={handleClose} />
+          </Modal>
+        </ModalContainer>
       )}
     </Container>
   )
@@ -230,15 +234,12 @@ const Arrow = styled.button`
   border: none;
 `
 const Modal = styled.div`
-  position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   max-width: 55rem;
   height: 30rem;
   background: #fff;
   display: flex;
+  position: relative;
 
   > img {
     height: 100%;
@@ -256,9 +257,36 @@ const Modal = styled.div`
       text-align: center;
     }
   }
-`
 
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: 100vh;
+
+    > img {
+      height: 60%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    > figcaption {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+`
+const Close = styled(CloseIcon)`
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+`
 const ModalContainer = styled.div`
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.8);
 `
