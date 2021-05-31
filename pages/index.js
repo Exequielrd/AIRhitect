@@ -6,9 +6,12 @@ export default function Home() {
     <Container>
       <Head>
         <title>AIRhitect - Inicio</title>
-        <title>AIRhitect - Inicio</title>
+
         <meta name="title" content="AIRhitect - Inicio" />
-        <meta name="description" content="hola como estas todo bien" />
+        <meta
+          name="description"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique ipsam a nesciunt blanditiis placeat ducimus! Similique, vero minima! Facilis!"
+        />
 
         <meta property="og:type" content="website" />
         <meta
@@ -16,24 +19,28 @@ export default function Home() {
           content="https://air-hitect-eight.vercel.app/"
         />
         <meta property="og:title" content="AIRhitect - Inicio" />
-        <meta property="og:description" content="hola como estas todo bien" />
+        <meta
+          property="og:description"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique ipsam a nesciunt blanditiis placeat ducimus! Similique, vero minima! Facilis!"
+        />
         <meta
           property="og:image"
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.png"
         />
 
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@exequielrd" />
         <meta
           property="twitter:url"
           content="https://air-hitect-eight.vercel.app/"
         />
-        <meta property="twitter:title" content="AIRhitect - Inicio" />
+        <meta name="twitter:title" content="AIRhitect - Inicio" />
         <meta
-          property="twitter:description"
-          content="hola como estas todo bien"
+          name="twitter:description"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique ipsam a nesciunt blanditiis placeat ducimus! Similique, vero minima! Facilis!"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-index.png"
         />
         <link rel="icon" href="/favicon.ico" />
