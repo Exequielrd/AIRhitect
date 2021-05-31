@@ -65,11 +65,11 @@ const Works = () => {
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects1.png"
         />
         <meta
-          name="twitter:image0"
+          name="twitter:image1"
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects2.png"
         />
         <meta
-          name="twitter:image0"
+          name="twitter:image2"
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects3.png"
         />
         <link rel="icon" href="/favicon.ico" />
