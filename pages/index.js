@@ -19,7 +19,7 @@ export default function Home() {
         <meta property="og:description" content="hola como estas todo bien" />
         <meta
           property="og:image"
-          content="https://air-hitect-eight.vercel.app/public/meta-index.png"
+          content="https://raw.githubusercontent.com/Exequielrd/AIRhitect/main/public/meta-index.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://air-hitect-eight.vercel.app/public/meta-index.png"
+          content="https://raw.githubusercontent.com/Exequielrd/AIRhitect/main/public/meta-index.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
