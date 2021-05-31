@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@exequielrd" />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content="https://air-hitect-eight.vercel.app/"
         />
         <meta name="twitter:title" content="AIRhitect - Inicio" />
@@ -45,6 +45,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <TitleContainer>
         <BorderTop />
         <MobileTitle>
