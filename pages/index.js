@@ -29,7 +29,7 @@ export default function Home() {
 const Container = styled.header`
   width: 100vw;
   height: 100vh;
-  background: url("/background_hero.png") center;
+  background: url("/background_hero.webp") center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ const Container = styled.header`
   }
 
   @media (max-width: 768px) {
-    background: url("/background_hero_mobile.png");
+    background: url("/background_hero_mobile.webp");
     background-size: cover;
   }
 `
