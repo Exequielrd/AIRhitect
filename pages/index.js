@@ -1,31 +1,6 @@
 import Head from "next/head"
 import styled from "styled-components"
 
-export default function Home() {
-  return (
-    <Container>
-      <Head>
-        <title>AIRhitect - Inicio</title>
-        <meta name="author" content="Exequiel Ruiz" />
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:description" content="AIRhitect Inicio"></meta>
-        <meta name="twitter:image" content="/logo.png"></meta>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <TitleContainer>
-        <BorderTop />
-        <MobileTitle>
-          Dedicado <br /> al <br />
-          futuro
-        </MobileTitle>
-        <LargeTitle>Dedicado al futuro</LargeTitle>
-        <BorderBottom />
-      </TitleContainer>
-      <h2>web template</h2>
-    </Container>
-  )
-}
-
 const Container = styled.header`
   width: 100vw;
   height: 100vh;
@@ -101,3 +76,28 @@ const BorderTop = styled.div`
 const BorderBottom = styled(BorderTop)`
   bottom: 0;
 `
+
+export default function Home() {
+  return (
+    <Container>
+      <Head>
+        <title>AIRhitect - Inicio</title>
+        <meta name="author" content="Exequiel Ruiz" />
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:description" content="AIRhitect Inicio"></meta>
+        <meta name="twitter:image" content="/logo.png"></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <TitleContainer>
+        <BorderTop />
+        <MobileTitle>
+          Dedicado <br /> al <br />
+          futuro
+        </MobileTitle>
+        <LargeTitle>Dedicado al futuro</LargeTitle>
+        <BorderBottom />
+      </TitleContainer>
+      <h2>web template</h2>
+    </Container>
+  )
+}

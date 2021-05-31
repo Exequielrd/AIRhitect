@@ -47,7 +47,10 @@ const AboutUs = () => {
           Orci varius natoque penatibus et magnis dis
           parturient montes"
         />
-        <meta property="twitter:image" content="/logo.png" />
+        <meta
+          property="twitter:image"
+          content="https://air-hitect-eight.vercel.app/public/logo.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
