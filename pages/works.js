@@ -10,6 +10,10 @@ const Works = () => {
   const [indexGallery, setIndexGallery] = useState(0)
   const urls = ["/projects1.png", "/projects2.png", "/projects3.png"]
 
+  //Pop up state
+  const [open, setOpen] = useState(false)
+  console.log(open)
+
   // Controls for change gallery image
   const leftClick = () => {
     if (indexGallery === 0) {
@@ -25,6 +29,15 @@ const Works = () => {
     }
 
     return setIndexGallery(indexGallery + 1)
+  }
+
+  //Popup handle
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
   }
 
   return (
@@ -49,35 +62,28 @@ const Works = () => {
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/project1.png"
         />
 
-        <meta name="twitter:card" content="gallery" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@exequielrd" />
         <meta
           name="twitter:url"
           content="https://air-hitect-eight.vercel.app/works"
         />
-        <meta name="twitter:title" content="AIRhitect - Sobre nosotros" />
+        <meta name="twitter:title" content="AIRhitect - Trabajos" />
         <meta
           name="twitter:description"
           content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique ipsam a nesciunt blanditiis placeat ducimus! Similique, vero minima! Facilis!"
         />
         <meta
-          name="twitter:image0"
+          name="twitter:image"
           content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects1.png"
         />
-        <meta
-          name="twitter:image1"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects2.png"
-        />
-        <meta
-          name="twitter:image2"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/projects3.png"
-        />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <IndexDescription>Trabajos</IndexDescription>
       <Gallery>
-        <Card url={"/projects1.png"}>
+        <Card url={"/projects1.png"} onClick={handleOpen}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -86,7 +92,7 @@ const Works = () => {
             </p>
           </ProjectDescription>
         </Card>
-        <Card url={"/projects2.png"}>
+        <Card url={"/projects2.png"} onClick={handleOpen}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -95,7 +101,7 @@ const Works = () => {
             </p>
           </ProjectDescription>
         </Card>
-        <Card url={"/projects3.png"}>
+        <Card url={"/projects3.png"} onClick={handleOpen}>
           <ProjectDescription>
             <h3>Nombre del proyecto</h3>
             <p>
@@ -123,6 +129,26 @@ const Works = () => {
       <Arrow left={"1rem"} onClick={leftClick}>
         <ArrowBackIosIcon style={{ fontSize: 30, color: "#eee" }} />
       </Arrow>
+      {open && (
+        <Modal>
+          <img src="/projects1.png" alt="proyecto" />
+          <figcaption>
+            <h2>Nombre del proyecto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit nam
+              curabitur sollicitudin egestas dis facilisis, luctus nulla sed non
+              quam tempus congue suscipit euismod turpis nisi libero. Morbi
+              placerat litora mollis odio tincidunt leo magna pulvinar ultrices,
+              mauris imperdiet vel ultricies risus metus eros ac, aptent auctor
+              pharetra facilisis nec euismod ligula sodales. Feugiat ad montes
+              bibendum quis ac nullam neque metus pellentesque pulvinar,
+              tristique cubilia litora viverra magna sodales quam fusce
+              interdum, quisque nec sollicitudin accumsan dapibus enim suscipit
+              sociosqu rutrum.
+            </p>
+          </figcaption>
+        </Modal>
+      )}
     </Container>
   )
 }
@@ -202,4 +228,37 @@ const Arrow = styled.button`
   place-items: center;
   border-radius: 0.5rem;
   border: none;
+`
+const Modal = styled.div`
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 55rem;
+  height: 30rem;
+  background: #fff;
+  display: flex;
+
+  > img {
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+  }
+
+  > figcaption {
+    width: 40%;
+    color: rgb(68, 61, 91);
+    padding: 0 2rem;
+    overflow: scroll;
+
+    > h2 {
+      text-align: center;
+    }
+  }
+`
+
+const ModalContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
 `

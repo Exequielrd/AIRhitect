@@ -1,5 +1,6 @@
 import Head from "next/head"
 import styled from "styled-components"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -47,15 +48,39 @@ export default function Home() {
       </Head>
 
       <TitleContainer>
-        <BorderTop />
-        <MobileTitle>
+        <BorderTop
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: "12rem", opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
+        />
+        <MobileTitle
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2, delay: 1.5 }}
+        >
           Dedicado <br /> al <br />
           futuro
         </MobileTitle>
-        <LargeTitle>Dedicado al futuro</LargeTitle>
-        <BorderBottom />
+        <LargeTitle
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2, delay: 1.5 }}
+        >
+          Dedicado al futuro
+        </LargeTitle>
+        <BorderBottom
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: "12rem", opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
+        />
       </TitleContainer>
-      <h2>web template</h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2, delay: 2.5 }}
+      >
+        web template
+      </motion.h2>
     </Container>
   )
 }
@@ -100,7 +125,7 @@ const TitleContainer = styled.div`
     padding: 0 4rem;
   }
 `
-const MobileTitle = styled.h1`
+const MobileTitle = styled(motion.h1)`
   width: 100%;
   margin: 2rem 0;
   line-height: 1;
@@ -109,17 +134,17 @@ const MobileTitle = styled.h1`
     display: none;
   }
 `
-const LargeTitle = styled.h1`
+const LargeTitle = styled(motion.h1)`
   margin: 0 1rem;
 
   @media (max-width: 767px) {
     display: none;
   }
 `
-const BorderTop = styled.div`
+const BorderTop = styled(motion.div)`
   background: rgb(68, 61, 91);
   width: 8rem;
-  height: 0.31rem;
+  height: 0.3rem;
   position: relative;
   top: 0;
   left: 50%;

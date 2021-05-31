@@ -22,7 +22,7 @@ const AboutUs = () => {
         />
         <meta
           property="og:image"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-aboutus.png"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-aboutus.webp"
         />
 
         <meta name="twitter:card" content="summary" />
@@ -38,7 +38,7 @@ const AboutUs = () => {
         />
         <meta
           name="twitter:image"
-          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-aboutus.png"
+          content="https://air-hitect-f7u6g28kq-exequielrd.vercel.app/meta-aboutus.webp"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
