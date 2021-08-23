@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const AboutUs = () => {
   return (
-    <Container>
+    <Container id="aboutus">
       <Head>
         <title>AIRhitect - Sobre nosotros</title>
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="hero">
       <Head>
         <title>AIRhitect - Inicio</title>
 

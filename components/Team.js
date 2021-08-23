@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Team = () => {
   return (
-    <Container>
+    <Container id="team">
       <Head>
         <title>AIRhitect - Equipo</title>
         <meta name="description" content="Equipo de AIRhitect" />

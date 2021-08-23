@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <Head>
         <title>AIRhitect - Contacto</title>
         <meta name="description" content="Cotacta con AIRhitect" />
