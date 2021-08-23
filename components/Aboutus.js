@@ -1,6 +1,5 @@
 import Head from "next/head"
 import styled from "styled-components"
-import IndexDescription from "../components/IndexDescripion"
 
 const AboutUs = () => {
   return (
@@ -43,7 +42,6 @@ const AboutUs = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <IndexDescription>Sobre nosotros</IndexDescription>
       <Text>
         <Border />
         <article>

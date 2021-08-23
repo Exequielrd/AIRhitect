@@ -2,7 +2,6 @@ import { useState } from "react"
 import styled from "styled-components"
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos"
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos"
-import IndexDescription from "../components/IndexDescripion"
 import Head from "next/head"
 import CloseIcon from "@material-ui/icons/Close"
 
@@ -82,7 +81,6 @@ const Works = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <IndexDescription>Trabajos</IndexDescription>
       <Gallery>
         <Card url={"/projects1.png"} onClick={() => handleOpen(0)}>
           <ProjectDescription>
@@ -163,6 +161,7 @@ const Container = styled.section`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 `
 const Gallery = styled.div`
   width: 100%;

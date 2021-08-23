@@ -70,7 +70,7 @@ export default Navbar
 const Container = styled.nav`
   width: 100vw;
   height: 4rem;
-  background: transparent;
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   position: fixed;

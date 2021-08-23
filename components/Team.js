@@ -1,7 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
 import styled from "styled-components"
-import IndexDescription from "../components/IndexDescripion"
 
 const Team = () => {
   return (
@@ -12,8 +11,6 @@ const Team = () => {
         <meta name="keywords" content="airhitect, equipo, Mexico"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <IndexDescription>Nuestro equipo</IndexDescription>
 
       <PersonContainer>
         <PersonCard>

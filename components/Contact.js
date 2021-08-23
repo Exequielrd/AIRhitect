@@ -1,8 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
-import IndexDescription from "../components/IndexDescripion"
 import { IconButton, TextField } from "@material-ui/core"
-import Navbar from "../components/navbar"
+import Navbar from "./Navbar"
 import Head from "next/head"
 import Snackbar from "@material-ui/core/Snackbar"
 import { useState } from "react"
@@ -32,10 +31,6 @@ const Contact = () => {
         <meta name="keywords" content="airhitect, contacto, Mexico"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar white={true} />
-
-      <IndexDescription>Contactanos</IndexDescription>
 
       <ContactInfo>
         <Info>
